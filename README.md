@@ -7,10 +7,10 @@
 - [2](#2)
 - [Installation](#installation)
 - [4](#4)
-- [5](#5)
+- [License](#license)
 
 ## 1
 ## 2
 ## Installation
 ## 4
-## 5
+## License
