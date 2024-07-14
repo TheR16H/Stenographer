@@ -13,8 +13,10 @@
 - [Acknowledgments](#Acknowledgments)
 - [License](#license)
 
-## 1
-## 2
+## Visuals
+## Usage
 ## Installation
-## 4
+## Support
+## Contributions
+## Acknowledgments
 ## License
