@@ -22,7 +22,7 @@
 ## Support
 
 ## Contributions
-
+no contributions will be needed for this project.
 ## Acknowledgments
 
 ## License
