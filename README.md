@@ -1,12 +1,16 @@
 # Stenographer
 
-## Description
+## Description 
+<!-- The purpose of [name](deployed link)  -->
 
-## Table Of Contents
-- [1](#1)
-- [2](#2)
+## Table of Contents
+
+- [Visuals](#visuals)
+- [Usage](#usage)
 - [Installation](#installation)
-- [4](#4)
+- [Support](#support)
+- [Contributions](#contributions)
+- [Acknowledgments](#Acknowledgments)
 - [License](#license)
 
 ## 1
