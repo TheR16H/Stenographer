@@ -22,10 +22,10 @@
 
 
 ## Installation
-to install any of the required npm packages just run the following command in your terminal. 
+<!-- to install any of the required npm packages just run the following command in your terminal. 
 ```
 npm i
-```
+``` -->
 
 ## Support
 Find me on [Github!](https://github.com/TheR16H) for any support or to see any of my other works.
