@@ -35,6 +35,7 @@ no contributions will be needed for this project.
 
 ## Acknowledgments
 - [Routers Docs](https://developer.mozilla.org/en-US/docs/Glossary/Routers)
+- [Alternate Routing docs](https://expressjs.com/en/guide/routing.html)
 
 ## License
 <!-- MIT License 🔔
