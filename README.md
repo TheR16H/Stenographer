@@ -14,9 +14,15 @@
 - [License](#license)
 
 ## Visuals
+
 ## Usage
+
 ## Installation
+
 ## Support
+
 ## Contributions
+
 ## Acknowledgments
+
 ## License
