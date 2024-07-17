@@ -34,8 +34,9 @@ Find me on [Github!](https://github.com/TheR16H) for any support or to see any o
 no contributions will be needed for this project.
 
 ## Acknowledgments
-- [Routers Docs](https://developer.mozilla.org/en-US/docs/Glossary/Routers)
-- [Alternate Routing docs](https://expressjs.com/en/guide/routing.html)
+- [Routers docs](https://developer.mozilla.org/en-US/docs/Glossary/Routers)
+- [Alternate routing docs](https://expressjs.com/en/guide/routing.html)
+- [Express package docs](https://www.npmjs.com/package/express)
 
 ## License
 <!-- MIT License 🔔
