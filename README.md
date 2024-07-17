@@ -28,7 +28,7 @@ npm i
 ``` -->
 
 ## Support
-Find me on [Github!](https://github.com/TheR16H) for any support or to see any of my other works.
+<!-- Find me on [Github!](https://github.com/TheR16H) for any support or to see any of my other works. -->
 
 ## Contributions
 no contributions will be needed for this project.
