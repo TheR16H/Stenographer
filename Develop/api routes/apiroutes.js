@@ -4,3 +4,15 @@
 // and then return the new note to the client. 
 // You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
 
+
+
+app.get("", function(req,res) { 
+    res.json();
+});
+
+app.post("", function(req,res) {
+    //push to the body?
+    
+});
+
+app.delete
