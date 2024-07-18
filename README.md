@@ -15,7 +15,6 @@
 
 ## Visuals
 <!-- ![Screenshot](link to SS)
-![Screenshot](link to SS)
 ![gif](link to gif) -->
 
 ## Usage
