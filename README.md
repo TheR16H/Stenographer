@@ -10,7 +10,7 @@
 - [Installation](#installation)
 - [Support](#support)
 - [Contributions](#contributions)
-- [Acknowledgments](#Acknowledgments)
+- [References](#references)
 - [License](#license)
 
 ## Visuals
@@ -32,7 +32,7 @@ npm i
 ## Contributions
 no contributions will be needed for this project.
 
-## Acknowledgments
+## References
 - [Routers docs](https://developer.mozilla.org/en-US/docs/Glossary/Routers)
 - [Alternate routing docs](https://expressjs.com/en/guide/routing.html)
 - [Express package docs](https://www.npmjs.com/package/express)
