@@ -2,7 +2,22 @@ const express = require("express");
 const fs = reqiuire("fs");
 const PORT = 3001;
 let db = require('./db/db.json');
+
 const path = require('path');
+const app = express();
+const 
+
+
+
+
+
+
+
+
+
+
+
+
 // You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
 
 
@@ -24,3 +39,8 @@ app.delete("", function(req,res) {
     // we may need to check the length since it was originally an array
 
 });
+
+app.listen(PORT, () =>
+    console.log(`App listening at http://localhost:${PORT}`)
+  );
+  
