@@ -1,11 +1,11 @@
 const express = require("express");
 const fs = reqiuire("fs");
 let db = require('./db/db.json');
-const apiRoutes = require('./apiRoutes'); 
 const path = require('path');
+const notes = require("./apiRoutes/notes");
 const app = express();
 
-app.use('/', apiRoutes);
+app.use('/', notes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // * `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
 
-app.get("/api/notes", (req, res) => {
+app.get("/apiroutes/notes", (req, res) => {
     db = JSON.parse(fs.readFileSync("./db/db.json")) || []
         res.JSON(db)
 });
