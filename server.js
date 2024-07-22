@@ -73,3 +73,13 @@ app.delete("", function(req,res) {
 
 });
 
+const response = {
+    status: "success",
+    body: newNote,
+  };
+
+  console.log(response);
+  res.status(201).json(response);
+
+
+
