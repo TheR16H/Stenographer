@@ -26,9 +26,6 @@ app.use(express.static('public'));
 
 
 // * `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-app.get("/", function(req,res) { 
-    res.sendFile(path.join(__dirname, "/public/index.html"))
-});
 
 
 // POST /api/notes should receive a new note to save on the request body, add it to the db.json file, 
