@@ -1,13 +1,13 @@
 const express = require("express");
 const fs = reqiuire("fs");
-const PORT = 3001;
 let db = require('./db/db.json');
-
+const apiRoutes = require('./apiRoutes'); 
 const path = require('path');
 const app = express();
+
+app.use('/', apiRoutes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 app.use(express.static('public'));
 
 
@@ -41,7 +41,3 @@ app.delete("", function(req,res) {
 
 });
 
-app.listen(PORT, () =>
-    console.log(`App listening at http://localhost:${PORT}`)
-  );
-  
