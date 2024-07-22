@@ -32,11 +32,39 @@ app.get("/api/notes", (req, res) => {
     db = JSON.parse(fs.readFileSync("./db/db.json")) || []
         res.JSON(db)
 });
+
 // POST /api/notes should receive a new note to save on the request body, add it to the db.json file, 
 // and then return the new note to the client. 
-app.post("", function(req,res) {
+app.post("", function(req,res) { 
+    console.info(`${req.method} adding a note!!`);
+    const { title, text } = req.body;
+    if ( title && text ) { 
+        const newNote = {
+            title,
+            text,
+            id: noteId() //,
+        };
+
+        fs.readFile('./db/db.json', 'utf8', (err, data) => {
+            if (err) {
+              console.error(err);
+            } else {
+              const parsedNotes = JSON.parse(data)
+              console.log(data)
+              parsedNotes.push(newNote)
+              db = parsedNotes
+              fs.writeFile('./db/db.json', JSON.stringify(parsedNotes, null, 4), (writeErr) =>
+                writeErr
+                  ? console.error(writeErr)
+                  : console.info('Successfully updated notes')
+                );
+              
+            
+            }
+          });
+
     //push to the body?
-    
+    }
 });
 
 // * `DELETE /api/notes/:id
