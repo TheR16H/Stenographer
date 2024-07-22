@@ -9,6 +9,7 @@ app.use('/', apiRoutes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 
@@ -27,7 +28,10 @@ app.use(express.static('public'));
 
 // * `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
 
-
+app.get("/api/notes", (req, res) => {
+    db = JSON.parse(fs.readFileSync("./db/db.json")) || []
+        res.JSON(db)
+});
 // POST /api/notes should receive a new note to save on the request body, add it to the db.json file, 
 // and then return the new note to the client. 
 app.post("", function(req,res) {
