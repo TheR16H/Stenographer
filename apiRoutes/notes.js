@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 let db = require('../db/db.json');
-const noteId = require('../public/helpers/id');
 
 // GET /api/notes
 router.get('/api/notes', (req, res) => {
