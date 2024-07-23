@@ -4,7 +4,10 @@ let db = require('./db/db.json');
 const path = require('path');
 const notes = require("./apiRoutes/notes");
 const app = express();
+const express = require('express');
 
+// Import the routes from notes.js
+const notesRoutes = require('./notes');
 app.use('/', notes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -67,11 +70,11 @@ app.post("", function(req,res) {
     }
 });
 
-// * `DELETE /api/notes/:id
-app.delete("", function(req,res) {
-    // we may need to check the length since it was originally an array
+// // * `DELETE /api/notes/:id
+// app.delete("", function(req,res) {
+//     // we may need to check the length since it was originally an array
 
-});
+// });
 
 const response = {
     status: "success",

@@ -14,3 +14,4 @@ app.get('/notes', (req, res) =>
   return app;
 
 };
+module.exports = router;
