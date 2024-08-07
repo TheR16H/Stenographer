@@ -314,17 +314,21 @@ const handleNewNoteView = (e) => {
   renderActiveNote();
 };
 
-const handleRenderBtns = () => {
-  show(clearBtn);
-  if (!noteTitle.value.trim() && !noteText.value.trim()) {
-    hide(clearBtn);
-  } else if (!noteTitle.value.trim() || !noteText.value.trim()) {
-    hide(saveNoteBtn);
+const handleRenderBtns = (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault(); // Prevent the default behavior of creating a new line
+    handleNoteSave(); // Call the function to save the note
   } else {
-    show(saveNoteBtn);
+    show(clearBtn);
+    if (!noteTitle.value.trim() && !noteText.value.trim()) {
+      hide(clearBtn);
+    } else if (!noteTitle.value.trim() || !noteText.value.trim()) {
+      hide(saveNoteBtn);
+    } else {
+      show(saveNoteBtn);
+    }
   }
 };
-
 const renderNoteList = async () => {
   const notes = await getNotes();
   const jsonNotes = await notes.json();
@@ -354,6 +358,6 @@ if (window.location.pathname === '/notes') {
   newNoteBtn.addEventListener('click', handleNewNoteView);
   clearBtn.addEventListener('click', renderActiveNote);
   noteForm.addEventListener('input', handleRenderBtns);
-
+  noteForm.addEventListener('keypress', handleRenderBtns); 
   getNotes().then(renderNoteList);
 }
