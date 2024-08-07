@@ -70,3 +70,6 @@ router.post('/api/notes', (req, res) => {
 });
 
 module.exports = router;
+
+// click on the top left to demo what the notes used to look like before i changed it 
+// might have to change the /apu/notes things idk

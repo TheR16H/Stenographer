@@ -95,8 +95,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'notes.html'));
-});
+    res.sendFile(path.join(__dirname, 'notes.html')); // Update the file path to point to notes.html in the root directory
+  });
 
 app.get('/apiRoutes/notes', (req, res) => {
     fs.promises.readFile('./db/db.json', 'utf8')
