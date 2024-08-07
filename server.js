@@ -72,6 +72,8 @@
 //     console.log(`App listening on port ${PORT}`);
 // });
 
+//re written code below 
+
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -85,6 +87,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
+// why isnt this bringing up the notes html? 
 
 // Routes
 app.get('/', (req, res) => {
@@ -108,7 +111,8 @@ app.post('/apiRoutes/notes', (req, res) => {
         const newNote = {
             title,
             text,
-            id: uuid.v4() // Generate a unique ID for the new note
+            id: uuid.v4() // Generate a unique ID for the new note i think
+            // use math.random if doesn work
         };
 
         fs.promises.readFile('./db/db.json', 'utf8')
