@@ -220,14 +220,24 @@ const hide = (elem) => {
 };
 
 let activeNote = {};
+//changes here
 
-const getNotes = () =>
-  fetch('/apiRoutes/notes', {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
+// const getNotes = () =>
+//   fetch('/apiRoutes/notes', {
+//     method: 'GET',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     }
+//   });
+
+const getNotes = () => fetch('/api/notes', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+});
+
+//here
 
 const saveNote = (note) =>
   fetch('/apiRoutes/notes', {

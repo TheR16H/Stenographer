@@ -84,6 +84,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Middleware setup
+app.use('/api/notes', notesRoutes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -145,7 +146,7 @@ app.post('/apiRoutes/notes', (req, res) => {
 // Additional routes from notesRoutes if needed
 
 // Start the server
-app.use('/', notesRoutes);
+// app.use('/', notesRoutes);
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
 });
