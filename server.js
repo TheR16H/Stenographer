@@ -96,7 +96,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, 'notes.html')); // Update the file path to point to notes.html in the root directory
+    res.sendFile(path.join(__dirname, 'public', 'notes.html'));
   });
 
 app.get('/apiRoutes/notes', (req, res) => {
