@@ -12,14 +12,14 @@ function noteId() {
 }
 
 // GET /api/notes
-router.get('/api/notes', (req, res) => {
+router.get('/', (req, res) => {
   // Read the db.json file and send the notes as a response
   db = JSON.parse(fs.readFileSync("./db/db.json")) || [];
   res.json(db);
 });
 
 // POST /api/notes
-router.post('/api/notes', (req, res) => {
+router.post('/', (req, res) => {
   console.info(`${req.method} adding a note!!`);
   
   // Extract title and text from the request body
@@ -70,6 +70,3 @@ router.post('/api/notes', (req, res) => {
 });
 
 module.exports = router;
-
-// click on the top left to demo what the notes used to look like before i changed it 
-// might have to change the /apu/notes things idk

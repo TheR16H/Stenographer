@@ -1,7 +1,6 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const uuid = require('uuid'); // Import the uuid module for generating unique IDs
 const notesRoutes = require('./apiRoutes/notes');
 
 const PORT = process.env.PORT || 3001;
@@ -35,7 +34,7 @@ app.post('/api/notes', (req, res) => {
         const newNote = {
             title,
             text,
-            id: uuid.v4() // Generate a unique ID using uuid
+            id: Math.floor(Math.random() * 1000) // Generate a unique ID using Math.random()
         };
 
         fs.promises.readFile('./db/db.json', 'utf8')
