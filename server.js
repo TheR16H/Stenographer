@@ -91,7 +91,7 @@ app.delete('/apiRoutes/notes/:id', (req, res) => {
     
         // Next --> WE sort/search through our ARRAY (dataset) for the req.params.id  
         let filteredData = jsData.filter(note => {
-            return req.params.id !== note.id;
+            return parseInt(req.params.id) !== note.id;
         });
 
         console.log("Filtered: ", filteredData);
