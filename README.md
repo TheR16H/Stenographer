@@ -18,7 +18,7 @@ The purpose of this note taking application appropriately titled [Stenographer](
 ![gif](./public/assets/images/visual2.gif)
 
 ## Usage
-The current usage of [Stenographer](https://ther16h.github.io/Stenographer/) is to give the user the ability to POST and GET notes / tasks they intend to do and then you have the ability to delete them when finished.
+The correct usage of [Stenographer](https://ther16h.github.io/Stenographer/) is to give the user the ability to POST and GET notes / tasks they intend to do and then you have the ability to delete them when finished.
 
 ## Installation
 to install any of the required npm packages just run the following command in your terminal. 
